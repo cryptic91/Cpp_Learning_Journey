@@ -17,8 +17,8 @@ int main () {
     }
     cout << "\n";
 
-    char arr[] = "Shanto" ;
-    cout << arr ;
+    char array[] = "Shanto" ;
+    cout << array ;
 
     char shanto[100];
     getchar();
