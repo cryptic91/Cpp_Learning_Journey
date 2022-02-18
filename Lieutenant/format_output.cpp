@@ -13,12 +13,12 @@ int main () {
 
     cout << fixed;       // setprecision will work after point
 
-    cout << setprecision(6);  // will show total 12 values
+    cout << setprecision(10);  // will show total 10 values
 
     cout << setw(21)  << "Summation = " << x+y << endl;
     cout << setw(21)  << "Subtraction = " << x-y << endl;
 
-    cout << noshowpoint;    // no extra zero after point
+    cout << noshowpoint;      // no extra zero after point
 
     cout << setw(21)  << "Multiplication = " << x*y << endl;
     double d = x/y;

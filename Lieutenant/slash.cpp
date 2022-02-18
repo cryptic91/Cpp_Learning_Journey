@@ -16,7 +16,7 @@ int main () {
 
     cout << "\f No way coming home";
 
-    cout << "\nPrint simbles \t> \" \' \? \\ " << endl;
+    cout << "\nPrint symbles \t> \" \' \? \\ " << endl;
 
     return 0;
 }
