@@ -1,75 +1,63 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
 
-void quicksort(int number[25], int first, int last)
-{
-
-  int i, j, pivot, temp;
-
-  if (first < last)
-  {
-
-    pivot = first;
-
-    i = first;
-
-    j = last;
-
-    while (i < j)
-    {
-
-      while (number[i] <= number[pivot] && i < last)
-
-        i++;
-
-      while (number[j] > number[pivot])
-
-        j--;
-
-      if (i < j)
-      {
-
-        temp = number[i];
-
-        number[i] = number[j];
-
-        number[j] = temp;
-      }
-    }
-
-    temp = number[pivot];
-
-    number[pivot] = number[j];
-
-    number[j] = temp;
-
-    quicksort(number, first, j - 1);
-
-    quicksort(number, j + 1, last);
-  }
-}
+using namespace std;
 
 int main()
 {
 
-  int i, count, number[25];
+  int n;
+  cin >> n;
 
-  printf("Enter some elements (Max. - 25): ");
+  int arr[n];
 
-  scanf("%d", &count);
+  for (int i = 0; i < n; i++)
+  {
+    cin >> arr[i];
+  }
 
-  printf("Enter %d elements: ", count);
+  int s, c, num, total = 0;
+  cin >> s;
 
-  for (i = 0; i < count; i++)
+  sort(arr, arr + n, greater<int>());
 
-    scanf("%d", &number[i]);
+  int i = 0, j = 0;
+  pair<int, int> pair[20];
 
-  quicksort(number, 0, count - 1);
+  while (s > 0)
+  {
 
-  printf("The Sorted Order is: ");
+    if (arr[i] <= s)
+    {
+      c = arr[i];
+      num = s / c;
 
-  for (i = 0; i < count; i++)
+      pair[j].first = c;
+      pair[j].second = num;
+      j++;
 
-    printf(" %d", number[i]);
+      total += num;
+
+      s -= num * c;
+    }
+
+    i++;
+  }
+
+  if (s > 0)
+  {
+    cout << "Impossible" << endl;
+  }
+  else
+  {
+    cout << total << endl;
+
+    for(int k=0; k<j; k++){
+      for(i=0; i<pair[k].second; i++){
+        cout << pair[k].first << " " ;
+      }  
+    }
+  }
+  // cout << total << endl;
 
   return 0;
 }
