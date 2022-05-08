@@ -9,7 +9,7 @@ int main () {
     cout << "Enter your birth year: " ;
     cin >> year;
 
-    if (year%400==0 || (year%4==0 && year%100!=0) ){
+    if ( year%400==0 || (year%4==0 && year%100!=0) ){
         cout << year << " is leap year." << endl;
     }
     else
