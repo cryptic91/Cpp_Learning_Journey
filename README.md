@@ -4,37 +4,27 @@ Assalamualaikum! 👋
 
 This is how I learned C++ in my university life. I started on **06 December 2021** with my first Hello World, and every program I practiced is saved here.
 
-**New student?** You can learn from these codes too. Just follow the path below, step by step. 🚀
+**New student?** You can learn from these codes too. The folders on GitHub are sorted by alphabet, so please don't go from top to bottom. Follow this path instead, step by step. 🚀
 
 ## Learning Path
 
 | Step | Folder | What to do |
 |---|---|---|
 | 0 | `FirstCode.cpp` | Run your first Hello World |
-| 1 | `Loop` | Learn loops first |
-| 2 | `Array` | Then arrays |
-| 3 | `String` | Then strings |
-| 4 | `Lieutenant` | Introduction level. Solve the basic problems (scope, bitwise, break/continue, ternary, grading, temperature and more) |
-| 5 | `Captain` | Mid level. Palindrome, armstrong, strong number, fibonacci, sum of digits, linear search, pass by reference, guessing game |
-| 6 | `Major` | Code Force level. Codeforces problems (empty for now, coming soon 😅) |
+| 1 | `Lieutenant` | Introduction level. Start with the basics: comments, constants, expressions, formatted output, grading, ternary, unary, temperature. Leave `break_continue`, `bitwiseoperator` and `randomNumber01` for step 3 |
+| 2 | `cmath_shortcut` | Math functions: abs, sqrt, cbrt, pow, exp, log, sin, round, max/min |
+| 3 | `Loop` | Learn loops, then go back and finish the 3 files you skipped in `Lieutenant` |
+| 4 | `Funtion` | Functions and recursion (yes I spelled it wrong, it stays 😄) |
+| 5 | `Array` | Arrays, 2D arrays, searching |
+| 6 | `String` | Strings |
+| 7 | `Pointer` | Pointers |
+| 8 | `Captain` | Mid level. Palindrome, armstrong, strong number, fibonacci, sum of digits, linear search, pass by reference, guessing game |
+| 9 | `Structure` | struct |
+| 10 | `Sorting` | Bubble, selection, insertion, merge and quick sort |
+| 11 | `Algorithm_Lab` | University algorithm lab problems |
+| 12 | `Major` | Code Force level. Codeforces problems (empty for now, coming soon 😅) |
 
 Like a rank in the army, you start from the bottom and go up. 🎖️
-
-## Other folders
-
-- `Funtion` - functions (yes I spelled it wrong, it stays 😄)
-- `Pointer` - pointers
-- `Structure` - struct
-- `Sorting` - sorting algorithms
-- `Algorithm_Lab` - algorithm practice
-- `cmath_shortcut` - cmath functions: abs, sqrt, cbrt, pow, exp, log, sin, round, max/min
-
-## How to run
-
-```
-g++ FirstCode.cpp -o first
-./first
-```
 
 ---
 
