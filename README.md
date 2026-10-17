@@ -38,4 +38,4 @@ g++ FirstCode.cpp -o first
 
 ---
 
-*Made with a lot of bugs and a lot of chai.* ☕
+*Written in the Corona days, late at night, when the whole world was locked inside and a small black console window was my only escape. Every bug, every chai, every 3 AM "finally, it works!" is in these files.* 🌙☕
